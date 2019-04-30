@@ -1,0 +1,32 @@
+HOLA
+total 40K
+-rw-r--r-- 1 jsmoya jsmoya   39 Jan  8 14:50 __init__.py
+drwxr-xr-x 2 jsmoya jsmoya 4.0K Mar 20 12:19 __pycache__
+-rw-r--r-- 1 jsmoya jsmoya   82 Jan  8 16:05 model_system_commands_module.py
+-rw-r--r-- 1 jsmoya jsmoya    5 Apr 15 15:05 qqq.txt
+-rw-r--r-- 1 jsmoya jsmoya  14K Apr 15 12:39 system_commands_module.py
+drwxr-xr-x 2 jsmoya jsmoya 4.0K Apr 15 12:54 test
+-rw-r--r-- 1 jsmoya jsmoya    2 Jan  8 16:05 views_system_commands_module.py
+__init__.py
+__pycache__
+model_system_commands_module.py
+qqq.txt
+system_commands_module.py
+test
+views_system_commands_module.py
+HOLA
+total 40K
+-rw-r--r-- 1 jsmoya jsmoya   39 Jan  8 14:50 __init__.py
+drwxr-xr-x 2 jsmoya jsmoya 4.0K Mar 20 12:19 __pycache__
+-rw-r--r-- 1 jsmoya jsmoya   82 Jan  8 16:05 model_system_commands_module.py
+-rw-r--r-- 1 jsmoya jsmoya  589 Apr 15 15:09 qqq.txt
+-rw-r--r-- 1 jsmoya jsmoya  14K Apr 15 12:39 system_commands_module.py
+drwxr-xr-x 2 jsmoya jsmoya 4.0K Apr 15 12:54 test
+-rw-r--r-- 1 jsmoya jsmoya    2 Jan  8 16:05 views_system_commands_module.py
+__init__.py
+__pycache__
+model_system_commands_module.py
+qqq.txt
+system_commands_module.py
+test
+views_system_commands_module.py

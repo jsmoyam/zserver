@@ -1,0 +1,1 @@
+MODULE_NAME = 'test_module'

@@ -1,0 +1,18 @@
+# Habria que ver como quitar la constante MODULE_NAME de los __init__.py
+  No se puede quitar porque fastidiaria el tema de las anotaciones de logger
+
+# Meter variable PYTHONPATH en una instalacion
+No es necesario, se puede ejecutar el framework con export PYTHONPATH=... ; python main,py
+
+# Renombrar comandos que ya existen en el shell normal
+El comando history se puede renombrar a zhistory, pero con history no se accede al comando history de bash porque
+no parece ser un ejecutable en el sistema
+
+# Usar python-daemon para tener una clase en la raiz del proyecto que permita ejecutar comandos start, stop, restart
+Esto se hara mas adelante y se consultara con sistemas
+
+# Instalar elk
+
+
+# Modulo que de información de si una máquina está activa o no
+
