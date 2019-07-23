@@ -102,7 +102,7 @@ class DirectoryTreeModuleView(ViewModule):
             directory_files_result_data = None
         else:
             directory_files_result_data = DirectoryFilesResultData(directory_files_result.get("repository_path"), directory_files_result.get("actual_path"), directory_files_result.get("number_of_results"), directory_files_result.get("directory_files_result"))
-
+        # TODO : Crear output de la nueva forma con HTTPresult.
         return self.app_module.create_output(TreeModuleResponse, DirectoryTreeResultSchema, directory_files_result_data, directory_files_response.get("status"), msg=directory_files_response.get("message_id"))
 
 
@@ -113,7 +113,7 @@ class DirectoryTreeModuleView(ViewModule):
             repositories_result_data = None
         else:
             repositories_result_data = RepositoriesResultData(repositories_result.get("number_of_repositories"), repositories_result.get("repositories"))
-
+        # TODO : Crear output de la nueva forma con HTTPresult.
         return self.app_module.create_output(TreeModuleResponse, RepositoriesResultSchema, repositories_result_data, repositories_response.get("status"), msg=repositories_response.get("message_id"))
 
 
@@ -181,5 +181,5 @@ class SearchModuleView(ViewModule):
             search_result_data = None
         else:
             search_result_data = SearchResultData(search_result.get("from_path"), search_result.get("text_to_search"), search_result.get("is_search_finished"), search_result.get("number_of_results"), search_result.get("search_result"))
-
+        # TODO : Crear output de la nueva forma con HTTPresult.
         return self.app_module.create_output(TreeModuleResponse, SearchResultSchema, search_result_data, search_response.get("status"), msg=search_response.get("message_id"))

@@ -3,13 +3,13 @@ import os
 from typing import List
 from marshmallow import Schema, fields
 
-from common.app_model import DataResult
+from common.app_model import AppDataResult
 
 
-class TreeModuleResponse(DataResult):
+class TreeModuleResponse(AppDataResult):
 
     def __init__(self, code: str, data: dict, msg: str = '', exception: Exception = None):
-        DataResult.__init__(self, code, data, msg, exception)
+        AppDataResult.__init__(self, code, data, msg, exception)
 
 
 class FileSystemElement(object):

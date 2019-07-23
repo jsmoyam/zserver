@@ -1,7 +1,7 @@
 from marshmallow import Schema, fields
 
 from typing import Dict, Union
-from common.app_model import DataResult
+from common.app_model import AppDataResult, AppHTTPStatus
 
 
 class CpuStatData:
@@ -115,11 +115,23 @@ class ShutdownSchema(Schema):
     success = fields.Bool()
 
 
-class MonitResult(DataResult):
+class MonitResult(AppDataResult):
+    """
+    Class that defines the output data of the module views
+    """
 
-    def __init__(self, code: str, data: dict, msg: str = '', exception: Exception = None):
-        DataResult.__init__(self, code, data, msg, exception)
+    def __init__(self, status_code: AppHTTPStatus, success: bool, data: dict = None, msg: str = '',
+                 error: Exception = None):
+        """
+        Constructor: Init AppDataResult
 
+        :param status_code: http status code
+        :param success: true or false
+        :param data: data to send
+        :param msg: message for debug
+        :param error: exception if exist
+        """
+        AppDataResult.__init__(self, status_code, success, data, msg, error)
 
 class SystemStatisticsResultData:
 

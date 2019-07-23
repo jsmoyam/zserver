@@ -51,6 +51,7 @@ class ShutdownMonitModuleView(ViewModule):
         else:
             code = 'CODE_KO'
             msg = 'Can not shutdown machine'
-
+        # TODO : Crear output de la nueva forma con HTTPresult. Quizás para este módulo no tiene sentido y habría
+        #  que modificar el create_output
         result = self.app_module.create_output(MonitResult, ShutdownSchema, out, code, msg=msg)
         return result

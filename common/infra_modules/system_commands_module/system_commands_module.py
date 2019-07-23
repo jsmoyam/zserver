@@ -9,7 +9,7 @@ import threading
 import urllib
 
 from common import config
-from common.app_model import GenericErrorMessages
+from common.app_model import AppErrorCode
 
 from common.infra_modules.infra_module import InfraModule
 from common.infra_tools.decorators import log_function
@@ -66,7 +66,7 @@ class SystemCommandsModule(InfraModule):
 
                 return output.stdout, output.stderr
             except Exception:
-                logger.error(GenericErrorMessages.EXECUTED_COMMAND_ERROR, exc_info=True)
+                logger.error(AppErrorCode.EXECUTED_COMMAND_ERROR, exc_info=True)
                 return None, None
 
         if execute_in_thread:

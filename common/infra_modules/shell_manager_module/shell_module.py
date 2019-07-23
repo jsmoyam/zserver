@@ -5,7 +5,7 @@ from common.app_config import AppConfig
 from common.infra_modules.module_shell_summary import get_infra_shells
 
 
-logger = config.get_log(AppConfig.MAIN_CONFIGURATION)
+logger = config.get_log(AppConfig.APP_MAIN_CONFIGURATION)
 
 
 class MetaShellModule(type):
@@ -31,8 +31,8 @@ class MetaShellModule(type):
         infra_shell_modules = get_infra_shells()
 
         # Get product summary module class as string from configuration and then import dynamically
-        product_shell_summary_file = config.get_value(AppConfig.MAIN_CONFIGURATION,
-                                                      AppConfig.APP_PRODUCT_SHELL_SUMMARY_FILE)
+        product_shell_summary_file = config.get_value(AppConfig.APP_MAIN_CONFIGURATION,
+                                                      AppConfig.APP_SHELL_SUMMARY_FILE)
         product_shell_module_summary = importlib.import_module(product_shell_summary_file)
         product_shell_modules = product_shell_module_summary.get_product_shells()
 

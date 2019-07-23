@@ -1,21 +1,25 @@
+bcrypt
 cmd2
 colorama
 coverage
 fabric
 flask
-flask-classful
 flask-HTTPauth
+flask-classful
+flask-socketio
 marshmallow
 mysql-connector==2.1.4
 nose
+openpyxl
 pandas
 psutil
 pybluez
 pyfiglet
+pyjwt
 pymongo
-python-logstash
 pyopenssl
 pyro4
+python3-logstash
 pyudev
 pyvmomi
 requests
@@ -23,11 +27,7 @@ sh
 spurplus
 sqlalchemy
 temppathlib
-flask-socketio
-openpyxl
 xlrd
 
-#flask-socketio
-#eventlet
 
 # Paquetes necesarios: libffi-dev, python3-dev

@@ -1,7 +1,7 @@
 import ast
 from marshmallow import Schema, fields
 
-from common.app_model import DataResult
+from common.app_model import AppDataResult
 from common.infra_modules.infra_exception import InfraException
 
 
@@ -80,7 +80,7 @@ class VirtResult:
     CODE_KO = 'KO'
 
     def __init__(self, code: str, data: dict, msg: str = '', exception: Exception = None):
-        DataResult.__init__(self, code, data, msg, exception)
+        AppDataResult.__init__(self, code, data, msg, exception)
 
     def __repr__(self):
         return str(self.__dict__)
